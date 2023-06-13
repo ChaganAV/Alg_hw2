@@ -18,12 +18,12 @@ public class Main {
      * @param arr массив
      */
     private static void sortArray ( int[] arr){
-        //int n = arr.length/2 - 1;
-        int n = arr.length - 1;
+        int n = arr.length/2 - 1;
+        //int n = arr.length - 1;
         for (int i = n; i >= 0; i--) {
             heapArray(arr, n, i);
         }
-        for (int i = n; i >= 0; i--) {
+        for (int i = arr.length-1; i >= 0; i--) {
             int temp = arr[0];
             arr[0] = arr[i];
             arr[i] = temp;
